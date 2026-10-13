@@ -1,0 +1,16 @@
+package com.example.protection.data
+
+enum class ProtectionState {
+    FIRST_RUN,
+    SETUP_REQUIRED,
+    PERMISSION_REQUIRED,
+    READY_BUT_INACTIVE,
+    ACTIVE,
+    INTERVENTION,
+    COOLDOWN_REQUESTED,
+    COOLDOWN_ACTIVE,
+    DISABLE_CONFIRMATION,
+    DISABLED,
+    DEGRADED,
+    ERROR
+}

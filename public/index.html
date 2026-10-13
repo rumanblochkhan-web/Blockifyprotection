@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Blockify</title>
+    <meta name="description" content="Privacy Policy for Blockify - Adult Content Blocker & Focus Shield for Android. Full disclosure of on-device processing, AccessibilityService, and user data privacy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #eff6ff;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --border-highlight: #bfdbfe;
+            --badge-bg: #dbeafe;
+            --badge-text: #1e40af;
+            --alert-bg: #fef3c7;
+            --alert-border: #fcd34d;
+            --alert-text: #92400e;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+            color: #ffffff;
+            padding: 56px 20px 48px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            font-size: 38px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: #bfdbfe;
+            max-width: 600px;
+            margin: 0 auto 16px;
+            font-weight: 500;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .meta-tag {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 14px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: -24px auto 60px;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
+        }
+
+        .quick-nav {
+            background: var(--primary-light);
+            border: 1px solid var(--border-highlight);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 36px;
+        }
+
+        .quick-nav h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .quick-nav ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 8px 16px;
+        }
+
+        .quick-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .quick-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 36px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Prominent Disclosure Banner for Google Play */
+        .prominent-disclosure {
+            background: #fffbeb;
+            border: 2px solid #f59e0b;
+            border-radius: 14px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .prominent-disclosure h3 {
+            color: #b45309;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .prominent-disclosure p {
+            color: #78350f;
+            margin-bottom: 10px;
+        }
+
+        .prominent-disclosure ul {
+            color: #78350f;
+        }
+
+        .privacy-highlight {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 18px 0;
+        }
+
+        .privacy-highlight strong {
+            color: #166534;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 20px;
+            font-size: 14px;
+        }
+
+        .data-table th, .data-table td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-table th {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .badge-local {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .badge-cloud {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .badge-none {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #64748b;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .contact-box {
+            background: var(--primary-light);
+            border: 1px solid var(--border-highlight);
+            border-radius: 14px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .contact-email {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 14px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid var(--border-highlight);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 13px;
+            margin-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        .apk-download-bar {
+            margin-top: 24px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border);
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-download:hover {
+            background: var(--primary-dark);
+        }
+
+        @media (max-width: 640px) {
+            .content-card {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .data-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-wrap">🛡️</div>
+            <h1>Blockify Privacy Policy</h1>
+            <p class="subtitle">Adult Content Blocker, Focus Shield & Mindfulness Guard for Android</p>
+            <div class="meta-tags">
+                <span class="meta-tag">Effective Date: October 1, 2026</span>
+                <span class="meta-tag">Last Updated: October 1, 2026</span>
+                <span class="meta-tag">Application ID: com.blockifyroman.app</span>
+                <span class="meta-tag">Developer: Blockify Team</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-card">
+
+            <div class="quick-nav">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#overview">1. Overview & Commitment</a></li>
+                    <li><a href="#accessibility">2. AccessibilityService API (Crucial)</a></li>
+                    <li><a href="#device-admin">3. Device Administrator Policy</a></li>
+                    <li><a href="#overlay-permission">4. Draw Over Other Apps</a></li>
+                    <li><a href="#data-collection">5. Data Collection & Processing</a></li>
+                    <li><a href="#firebase-auth">6. Authentication & Cloud Storage</a></li>
+                    <li><a href="#advertising">7. Advertising (Google AdMob)</a></li>
+                    <li><a href="#retention-deletion">8. Data Retention & Account Deletion</a></li>
+                    <li><a href="#children">9. Children's Privacy</a></li>
+                    <li><a href="#contact">10. Contact Information</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 1 -->
+            <section id="overview" class="section">
+                <h2>1. Overview & Privacy Commitment</h2>
+                <p>
+                    Welcome to <strong>Blockify</strong> ("we", "our", or "us"). Blockify is an Android digital wellness application designed to help individuals overcome adult content distractions, build productive habits, maintain focus streaks, and guard their screen time through mindful interventions.
+                </p>
+                <div class="privacy-highlight">
+                    <strong>Zero-Surveillance Core Principle:</strong> Blockify was built from the ground up with a 100% on-device privacy guarantee. We do not monitor your private life, we do not log your personal messages, we do not record keystrokes, and we never sell your personal data to third parties.
+                </div>
+                <p>
+                    This Privacy Policy complies strictly with the <strong>Google Play Developer Program Policies</strong>, including the User Data Policy, Prominent Disclosure & Consent requirements, and the Account Deletion policy.
+                </p>
+            </section>
+
+            <!-- Section 2: ACCESSIBILITY SERVICE (GOOGLE PLAY MANDATORY DISCLOSURE) -->
+            <section id="accessibility" class="section">
+                <h2>2. AccessibilityService API Disclosure (Mandatory Notice)</h2>
+                
+                <div class="prominent-disclosure">
+                    <h3>⚠️ Prominent Disclosure Regarding AccessibilityService API</h3>
+                    <p>
+                        In accordance with the <strong>Google Play Accessibility API Policy</strong>, this application requires the use of the Android <code>AccessibilityService</code> API to perform its core advertised functionality: <strong>blocking adult web content, unsafe applications, and explicit keywords</strong>.
+                    </p>
+                    <p><strong>Specifically, Blockify uses the AccessibilityService API for:</strong></p>
+                    <ul>
+                        <li><strong>Real-Time Screen & URL Scanning:</strong> Detecting when a browser address bar or app window displays known adult domains, explicit keyword queries, or restricted package names that the user voluntarily configured for protection.</li>
+                        <li><strong>Immediate Focus Intervention:</strong> Instantly closing or redirecting the user away from harmful or triggering adult content to provide a mindful cooldown screen.</li>
+                        <li><strong>Anti-Tamper & Shield Protection:</strong> Detecting attempts to impulsively force-stop or disable protection during an active streak or focus lock window.</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>What the AccessibilityService DOES NOT DO:</strong></p>
+                    <ul>
+                        <li>❌ It <strong>DOES NOT</strong> read, collect, or store private chat messages, WhatsApp conversations, emails, or personal documents.</li>
+                        <li>❌ It <strong>DOES NOT</strong> capture or log keystrokes, credit card numbers, passwords, or personal credentials.</li>
+                        <li>❌ It <strong>DOES NOT</strong> record audio, capture screenshots, or take background camera photos.</li>
+                        <li>❌ It <strong>NEVER</strong> transmits your browsing history or visited URLs to any external cloud server. <strong>All evaluation is performed 100% on-device in volatile device memory and discarded immediately.</strong></li>
+                    </ul>
+                </div>
+                <p>
+                    The AccessibilityService is completely voluntary. It is activated only when you explicitly enable it in your Android Accessibility Settings and can be deactivated by you at any time in accordance with your configured focus cooldown settings.
+                </p>
+            </section>
+
+            <!-- Section 3: DEVICE ADMINISTRATOR -->
+            <section id="device-admin" class="section">
+                <h2>3. Device Administrator Permission Disclosure</h2>
+                <p>
+                    Blockify optionally requests the Android <code>BIND_DEVICE_ADMIN</code> permission.
+                </p>
+                <ul>
+                    <li><strong>Purpose:</strong> To prevent impulsive and immediate uninstallation of Blockify during high-urge vulnerability moments or active focus sessions.</li>
+                    <li><strong>Scope:</strong> This permission is used exclusively for the uninstall prevention shield. Blockify does <strong>NOT</strong> have the ability to remotely wipe your phone, lock your screen with a remote PIN, or change your device security credentials.</li>
+                    <li><strong>User Control:</strong> You can revoke Device Administrator privileges at any time through the in-app Emergency Stop feature or via Android Settings &gt; Security &gt; Device Admin Apps.</li>
+                </ul>
+            </section>
+
+            <!-- Section 4: OVERLAY PERMISSION -->
+            <section id="overlay-permission" class="section">
+                <h2>4. Draw Over Other Apps (SYSTEM_ALERT_WINDOW)</h2>
+                <p>
+                    Blockify uses the <code>SYSTEM_ALERT_WINDOW</code> permission (Display Over Other Apps) solely to present the full-screen <strong>Shield Intervention Screen</strong> when an explicit adult website or blocked application is detected. This provides a breathing countdown, motivational quote, and immediate exit route to safeguard your recovery.
+                </p>
+            </section>
+
+            <!-- Section 5: DATA COLLECTION SUMMARY -->
+            <section id="data-collection" class="section">
+                <h2>5. Data Collection, Usage & Storage</h2>
+                <p>
+                    The following table provides complete transparency into all types of data processed by Blockify:
+                </p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Purpose</th>
+                            <th>Storage Location</th>
+                            <th>Shared with 3rd Parties?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Account Info</strong> (Email, Name)</td>
+                            <td>Authentication, saving streaks & custom blocklists across devices</td>
+                            <td><span class="badge-cloud">Firebase Cloud</span></td>
+                            <td>No (Protected)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Streak & Habit Counters</strong></td>
+                            <td>Tracking days clean, milestones, and focus timers</td>
+                            <td><span class="badge-local">Device & Firestore</span></td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom Blocked Apps / URLs</strong></td>
+                            <td>Personal focus preferences selected by you</td>
+                            <td><span class="badge-local">Local Device Storage</span></td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Screen Content & Text</strong></td>
+                            <td>Real-time adult keyword detection only</td>
+                            <td><span class="badge-none">Never Stored / Ephemeral</span></td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advertising Identifiers (AAID)</strong></td>
+                            <td>AdMob rewarded ads for emergency unlock vouchers</td>
+                            <td><span class="badge-cloud">Google AdMob SDK</span></td>
+                            <td>Google Ad Services</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Crash Logs & Performance</strong></td>
+                            <td>App stability, bug fixing & ANR prevention</td>
+                            <td><span class="badge-cloud">Firebase Crashlytics</span></td>
+                            <td>No (Internal Diagnostic)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section 6: FIREBASE & AUTH -->
+            <section id="firebase-auth" class="section">
+                <h2>6. Authentication & Firebase Services</h2>
+                <p>
+                    Blockify utilizes Google Firebase (a subsidiary of Google LLC) to manage secure user authentication and cloud synchronization:
+                </p>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> Allows users to securely sign in using their Google Account or Email/Password. Passwords are never stored in plaintext and are handled directly by Google's secure cryptographic infrastructure.</li>
+                    <li><strong>Cloud Firestore:</strong> Stores user streak statistics, protected day counts, and account tier information. All access is protected by strict zero-trust Firestore Security Rules requiring authenticated user token validation.</li>
+                </ul>
+            </section>
+
+            <!-- Section 7: ADVERTISING -->
+            <section id="advertising" class="section">
+                <h2>7. Google AdMob (Rewarded Video Ads)</h2>
+                <p>
+                    Blockify offers users the option to watch voluntary Google AdMob Rewarded Video Ads in exchange for emergency unblock tokens or focus session credits:
+                </p>
+                <ul>
+                    <li>AdMob uses the Android Advertising ID (AAID) to serve ads in compliance with the Google Play Developer Policy.</li>
+                    <li>Users can reset or opt out of personalized advertising at any time by visiting Android Settings &gt; Google &gt; Ads.</li>
+                    <li>We do not collect sensitive user recovery details or share browsing habits with advertising partners.</li>
+                </ul>
+            </section>
+
+            <!-- Section 8: RETENTION & DELETION (GOOGLE PLAY MANDATORY) -->
+            <section id="retention-deletion" class="section">
+                <h2>8. Data Retention & Account Deletion Policy</h2>
+                <p>
+                    In accordance with Google Play's <strong>Account Deletion Requirement</strong>, you have full control over your personal data:
+                </p>
+                <ul>
+                    <li><strong>Retention:</strong> Your account profile, streaks, and focus metrics are retained as long as your account remains active.</li>
+                    <li><strong>In-App Deletion:</strong> You can delete your account and all associated cloud data at any time from <strong>Settings &gt; Account &gt; Delete Account</strong>.</li>
+                    <li><strong>Web / Email Deletion Request:</strong> If you have uninstalled the app or cannot access your device, you can request complete erasure of your account and cloud data by emailing us at <a href="mailto:rumanblochkhan@gmail.com">rumanblochkhan@gmail.com</a> with the subject <code>"Data Deletion Request - Blockify"</code>. Your request will be fulfilled within 7 business days.</li>
+                </ul>
+            </section>
+
+            <!-- Section 9: CHILDREN'S PRIVACY -->
+            <section id="children" class="section">
+                <h2>9. Children's Privacy</h2>
+                <p>
+                    Blockify is an adult content blocker and recovery tool designed for individuals seeking digital focus and self-discipline. Blockify is not directed at children under the age of 13 (or under 16 in the European Union). We do not knowingly collect personal information from children. If you believe that a child has provided us with personal data without parental consent, please contact us immediately and we will take prompt steps to delete such information.
+                </p>
+            </section>
+
+            <!-- Section 10: CONTACT -->
+            <section id="contact" class="section">
+                <h2>10. Developer & Contact Information</h2>
+                <p>
+                    If you have any questions, feedback, or concerns regarding this Privacy Policy or Blockify's data handling practices, please contact our privacy representative:
+                </p>
+                <div class="contact-box">
+                    <strong>Blockify Privacy Support</strong><br>
+                    Developer &amp; Operator: <strong>Blockify Team</strong><br>
+                    Official Contact Email:<br>
+                    <a href="mailto:rumanblochkhan@gmail.com" class="contact-email">rumanblochkhan@gmail.com</a>
+                </div>
+
+                <div class="apk-download-bar">
+                    <p style="font-size: 13px; color: var(--text-light); margin-bottom: 12px;">Need to download or update the application?</p>
+                    <a href="/app-debug.apk" class="btn-download" download="Blockify.apk">
+                        <span>🛡️</span>
+                        <span>Download Blockify Android APK</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Blockify. All rights reserved. • Built with 100% on-device privacy guarantee.
+        </footer>
+    </div>
+
+</body>
+</html>

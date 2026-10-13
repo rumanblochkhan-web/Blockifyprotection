@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Normal clients cannot list or read all emergency codes
+    match /emergency_codes/{codeId} {
+      allow read: if request.auth != null && resource.data.status == 'AVAILABLE';
+      allow update: if request.auth != null && 
+                    resource.data.status == 'AVAILABLE' && 
+                    request.resource.data.status == 'USED' && 
+                    request.resource.data.usedByUid == request.auth.uid;
+      allow create, delete: if false; // Only admin/backend
+    }
+
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

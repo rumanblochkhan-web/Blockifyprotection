@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Blockify</string>
+    <string name="accessibility_service_label">Blockify Protection</string>
+    <string name="accessibility_service_description">Blockify uses the AccessibilityService API for real-time adult content filtering, impulse prevention, and parental control. Active screen text and app window titles are inspected 100% locally on-device. No personal data, passwords, keystrokes, or screen content is stored or transmitted.</string>
+    <string name="device_admin_label">Blockify Protection</string>
+    <string name="device_admin_description">Optional self-discipline and parental control protection to prevent impulsive deactivation or uninstallation. Can be disabled at any time using the in-app Emergency Stop feature.</string>
+    
+    <!-- Intervention UX -->
+    <string name="intervention_header">Blockify Shield</string>
+    <string name="intervention_body">Pause and breathe. Your focus is guarded.</string>
+    <string name="intervention_tamper_header">Blockify Active</string>
+    <string name="intervention_tamper_body">Blockify is guarding your attention. Modifying or disabling protection is blocked.</string>
+    <string name="app_info_reminder_title">Blockify Protection Active</string>
+    <string name="app_info_reminder_body">You\'re viewing Blockify\'s App Info. Changes here may stop your protection.</string>
+    <string name="intervention_leaving">Leaving this screen now.</string>
+    <string name="intervention_action_leave">Leave</string>
+    <string name="intervention_action_report">Report mistake</string>
+    <string name="intervention_countdown_format">Redirecting in %1$d seconds…</string>
+    
+    <!-- Cooldown & Disable -->
+    <string name="disable_cooldown_title">Disable Blockify</string>
+    <string name="disable_cooldown_desc">Your request to disable protection has been received. Protection will remain active for 2 hours.</string>
+    <string name="disable_cancel_button">Got it</string>
+    <string name="disable_confirm_button">Confirm &amp; Disable Protection</string>
+    
+    <!-- False Positive Report -->
+    <string name="report_dialog_title">Report Safe Content</string>
+    <string name="report_dialog_message">This records a local aggregate count and suppresses recent false triggers. No screen text or private data is ever shared.</string>
+    <string name="report_dialog_confirm">Report Safe</string>
+    <string name="report_dialog_cancel">Dismiss</string>
+
+    <!-- Firebase App Configuration Defaults -->
+    <string name="default_web_client_id" translatable="false">508225538839-12dm4a047fqrnpdk3okv2753mid8tmb3.apps.googleusercontent.com</string>
+    <string name="google_app_id" translatable="false">1:508225538839:android:29d3457bc2152b8da94552</string>
+    <string name="project_id" translatable="false">blockify-10b16</string>
+    <string name="gcm_defaultSenderId" translatable="false">508225538839</string>
+</resources>

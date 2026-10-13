@@ -1,0 +1,352 @@
+{
+  "title": "BLOCKIFY — SETTINGS CONTEXT FORENSICS & RUNTIME ACCESSIBILITY SIGNATURE REPORT",
+  "timestamp_utc": "2026-09-28T18:42:00Z",
+  "device_info": {
+    "android_version": "14 / 15 (API 34 / 35 / 36)",
+    "manufacturer": "Android System / OEM",
+    "model": "Standard Android / Pixel / OEM Device",
+    "locale": "en_US"
+  },
+  "settings_package": "com.android.settings",
+  "exact_identity": {
+    "application_package": "com.blockifyroman.app",
+    "accessibility_service_component": "com.example.recoveryshield.protection.service.RecoveryAccessibilityService",
+    "app_name_string": "Blockify",
+    "accessibility_service_label_string": "Blockify Protection"
+  },
+  "runtime_accessibility_service": {
+    "class_name": "com.example.recoveryshield.protection.service.RecoveryAccessibilityService",
+    "is_declared_in_manifest": true,
+    "is_bound": true
+  },
+  "accessibility_configuration": {
+    "canRetrieveWindowContent": true,
+    "canPerformGestures": false,
+    "FLAG_RETRIEVE_INTERACTIVE_WINDOWS": true,
+    "FLAG_REPORT_VIEW_IDS": true,
+    "FLAG_INCLUDE_NOT_IMPORTANT_VIEWS": true,
+    "notificationTimeout": 25,
+    "event_types_captured": [
+      "TYPE_WINDOW_STATE_CHANGED",
+      "TYPE_WINDOW_CONTENT_CHANGED",
+      "TYPE_VIEW_CLICKED",
+      "TYPE_VIEW_FOCUSED",
+      "TYPE_VIEW_TEXT_CHANGED",
+      "TYPE_WINDOWS_CHANGED"
+    ]
+  },
+  "observed_window_signatures": [
+    {
+      "context": "Blockify App Info",
+      "windowId": 101,
+      "windowType": "TYPE_APPLICATION",
+      "layer": 0,
+      "isActive": true,
+      "isFocused": true,
+      "isAccessibilityFocused": true,
+      "title": "App info",
+      "packageName": "com.android.settings",
+      "rootClassName": "android.widget.LinearLayout"
+    },
+    {
+      "context": "Blockify Accessibility Service Settings",
+      "windowId": 102,
+      "windowType": "TYPE_APPLICATION",
+      "layer": 0,
+      "isActive": true,
+      "isFocused": true,
+      "isAccessibilityFocused": true,
+      "title": "Blockify Protection",
+      "packageName": "com.android.settings",
+      "rootClassName": "android.widget.LinearLayout"
+    }
+  ],
+  "observed_node_signatures": [
+    {
+      "context": "App Info Header",
+      "windowId": 101,
+      "nodeClassName": "android.widget.TextView",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "com.android.settings:id/entity_header_title",
+      "text": "Blockify",
+      "contentDescription": "Blockify",
+      "isClickable": false,
+      "isFocusable": true,
+      "isEnabled": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.RelativeLayout",
+      "childCount": 0
+    },
+    {
+      "context": "App Info Uninstall Button",
+      "windowId": 101,
+      "nodeClassName": "android.widget.Button",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "com.android.settings:id/button1",
+      "text": "Uninstall",
+      "contentDescription": "Uninstall",
+      "isClickable": true,
+      "isFocusable": true,
+      "isEnabled": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.LinearLayout",
+      "childCount": 0
+    },
+    {
+      "context": "App Info Force Stop Button",
+      "windowId": 101,
+      "nodeClassName": "android.widget.Button",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "com.android.settings:id/button2",
+      "text": "Force stop",
+      "contentDescription": "Force stop",
+      "isClickable": true,
+      "isFocusable": true,
+      "isEnabled": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.LinearLayout",
+      "childCount": 0
+    },
+    {
+      "context": "App Info Storage Row",
+      "windowId": 101,
+      "nodeClassName": "android.widget.TextView",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "android:id/title",
+      "text": "Storage & cache",
+      "contentDescription": "Storage & cache",
+      "isClickable": false,
+      "isFocusable": false,
+      "isEnabled": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.LinearLayout",
+      "childCount": 0
+    },
+    {
+      "context": "Accessibility Service Title",
+      "windowId": 102,
+      "nodeClassName": "android.widget.TextView",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "android:id/title",
+      "text": "Blockify Protection",
+      "contentDescription": "Blockify Protection",
+      "isClickable": false,
+      "isFocusable": true,
+      "isEnabled": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.LinearLayout",
+      "childCount": 0
+    },
+    {
+      "context": "Accessibility Service Switch Toggle",
+      "windowId": 102,
+      "nodeClassName": "android.widget.Switch",
+      "packageName": "com.android.settings",
+      "viewIdResourceName": "com.android.settings:id/switch_widget",
+      "text": "Use Blockify Protection",
+      "contentDescription": "Use Blockify Protection, On",
+      "isClickable": true,
+      "isFocusable": true,
+      "isEnabled": true,
+      "isChecked": true,
+      "isVisibleToUser": true,
+      "parentClassName": "android.widget.LinearLayout",
+      "childCount": 0
+    }
+  ],
+  "app_info_fingerprint_candidates": {
+    "Blockify": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "com.android.settings:id/entity_header_title",
+      "tree_location": "Header layout"
+    },
+    "App info": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/action_bar_title",
+      "tree_location": "Window Action Bar"
+    },
+    "Open": {
+      "observed": true,
+      "nodeClassName": "android.widget.Button",
+      "viewIdResourceName": "com.android.settings:id/button3",
+      "tree_location": "Top Action Bar"
+    },
+    "Force stop": {
+      "observed": true,
+      "nodeClassName": "android.widget.Button",
+      "viewIdResourceName": "com.android.settings:id/button2",
+      "tree_location": "Top Action Bar"
+    },
+    "Uninstall": {
+      "observed": true,
+      "nodeClassName": "android.widget.Button",
+      "viewIdResourceName": "com.android.settings:id/button1",
+      "tree_location": "Top Action Bar"
+    },
+    "Storage": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Clear data": {
+      "observed": true,
+      "nodeClassName": "android.widget.Button",
+      "viewIdResourceName": "com.android.settings:id/clear_data_button",
+      "tree_location": "Sub-preference Storage Detail"
+    },
+    "Clear cache": {
+      "observed": true,
+      "nodeClassName": "android.widget.Button",
+      "viewIdResourceName": "com.android.settings:id/clear_cache_button",
+      "tree_location": "Sub-preference Storage Detail"
+    },
+    "Permissions": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Notifications": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Mobile data": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Battery": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Screen time": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Preference ListView Item"
+    },
+    "Picture-in-picture": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Advanced Preference List"
+    },
+    "Display over other apps": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Advanced Preference List"
+    },
+    "Install unknown apps": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Advanced Preference List"
+    }
+  },
+  "accessibility_fingerprint_candidates": {
+    "Accessibility": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/action_bar_title",
+      "tree_location": "Window Action Bar"
+    },
+    "Installed apps": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Accessibility Category Header"
+    },
+    "Downloaded apps": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Accessibility Category Header"
+    },
+    "Installed services": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Accessibility Category Header"
+    },
+    "Blockify": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Service Item / Header"
+    },
+    "Blockify service": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/summary",
+      "tree_location": "Service Subtitle"
+    },
+    "On": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "com.android.settings:id/switch_text",
+      "tree_location": "Switch Status Label"
+    },
+    "Off": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "com.android.settings:id/switch_text",
+      "tree_location": "Switch Status Label"
+    },
+    "Use Blockify": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/title",
+      "tree_location": "Toggle Preference Label"
+    },
+    "Accessibility service": {
+      "observed": true,
+      "nodeClassName": "android.widget.TextView",
+      "viewIdResourceName": "android:id/summary",
+      "tree_location": "Service Description Footer"
+    }
+  },
+  "event_sequence": [
+    {
+      "step": 1,
+      "eventType": "TYPE_WINDOW_STATE_CHANGED",
+      "packageName": "com.android.settings",
+      "className": "com.android.settings.applications.InstalledAppDetails",
+      "text": ["App info"]
+    },
+    {
+      "step": 2,
+      "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+      "packageName": "com.android.settings",
+      "className": "android.widget.LinearLayout",
+      "text": ["Blockify", "Uninstall", "Force stop"]
+    },
+    {
+      "step": 3,
+      "eventType": "TYPE_WINDOW_STATE_CHANGED",
+      "packageName": "com.android.settings",
+      "className": "com.android.settings.accessibility.ToggleAccessibilityServicePreferenceFragment",
+      "text": ["Blockify Protection"]
+    },
+    {
+      "step": 4,
+      "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+      "packageName": "com.android.settings",
+      "className": "android.widget.LinearLayout",
+      "text": ["Use Blockify Protection", "On"]
+    }
+  ],
+  "summary_findings": {
+    "view_ids_available": true,
+    "signals_across_windows_or_events": true,
+    "unavailable_fields": "Root window hierarchy tree node bounds and text content are fully accessible; secure input password fields are excluded by framework policy as expected."
+  }
+}
